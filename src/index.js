@@ -7,7 +7,7 @@ module.exports = function longestConsecutiveLength(array) {
 
   var max   = 0;
   var count = 1;
-  arr.map(function(item,index, array){
+  arr.forEach(function(item,index, array){
     var diff = item - array[index-1];
     if ( diff == 1 ) count++;
     if ( diff > 1 ) {
